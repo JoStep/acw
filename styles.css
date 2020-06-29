@@ -1,0 +1,194 @@
+@font-face {
+    font-family: url(fonts/Quattrocento_Sans);
+}
+
+* {
+    font-family: 'Quattrocento Sans', sans-serif;
+    box-sizing:border-box;
+}
+
+body {
+    color: rgb(10, 24, 26);
+    background-color: #ffffff;
+    margin: 0;
+    font-size: 18px;
+}
+
+navbar {
+    background-color: #DCDADA;
+    display: flex;
+    box-shadow: 0 0 6px 0;
+    align-items: center;
+}
+
+navbar a {
+    flex: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    font-size: 1em;
+    word-spacing: 10px;
+    letter-spacing: .2em;
+    color: darkgray;
+}
+
+a:hover {
+    color: darkblue;
+    font-weight: 800;
+    text-decoration: none;
+    opacity: 0.7;
+}
+
+    /* Facebook */
+.fa {
+    padding: 2vw;
+    width: 5.5vw;
+    text-decoration: none;
+}
+
+    .fa:hover {
+        opacity: 0.7;
+    }
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+    /* Yelp */
+.yelp {
+    width: 14.5vw;
+}
+    .yelp:hover {
+        opacity: 0.7;
+    }
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-content: space-evenly;
+}
+
+header {
+    background-image: url('photos/cole-keister-eLkIMnp1G-s-unsplash (2).jpg');
+    background-size: cover;
+    box-shadow: black 0 5px 5px 5px;
+    text-align: center;
+    flex: 30%;
+}
+
+    .logo {
+        width: 100%;
+    }
+
+    .logo img {
+        width: 100%;
+        padding: 1em;
+    }
+
+main {
+    flex: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.8vw;
+    align-content: space-evenly;
+    align-items: center;
+    justify-content: center;
+}
+
+.description {
+    list-style: none;
+    padding: 15px;
+    line-height: 2.5vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+}
+
+.photo {
+    border-radius: 15px;
+    box-shadow: rgb(27, 26, 25) 5px 5px 5px 5px;
+    border: rgb(27, 26, 25) solid 3px;
+    width: 250px;
+    height: 300px;
+    object-fit: contain;
+}
+
+#services h5 {
+    color: #ee3e2c;
+    border-radius: 6px;
+    transition: .09s;
+    line-height: 3vw;
+    cursor: pointer;
+    text-align: center;
+    border: 1px solid rgb(27, 26, 25);
+    box-shadow: #131009 0 0 1px 1px;
+    border-radius: 3px;
+    font-size: 1.1em;
+    padding: 5px 10px;
+    display: inline-block;
+    margin-block-start: 0;
+    margin-block-end: 5px;
+}
+
+    #services h5:hover {
+        opacity: 0.5;
+        font-weight: 800;
+    }
+
+
+
+.playing {
+    transform: scale(1.1);
+    border-color: lavenderblush;
+    box-shadow: 0 0 10px lavenderblush;
+}
+
+
+footer li {
+    display: inline-block;
+    font-size: .5em;
+}
+
+
+@media screen and (max-width: 700px) {
+    .row, .navbar, main, .description {
+        flex-direction: column;
+        flex-wrap: unset;
+
+    }
+
+    .description {
+        display: block;
+    }
+
+    .logo img {
+        width: 60%;
+        padding: 1em;
+    }
+
+    .description {
+        flex-direction: row;
+        font-size: 1.5em;
+        letter-spacing: 1px;
+    }
+    #contact-us {
+        order: 3;
+        display: flex;
+        align-content:baseline;
+    }
+    #about-us {
+        order: 1;
+    }
+    #picAboutUs {
+        order: 2;
+    }
+    #picContactUs {
+        order: 4;
+    }
+}
+

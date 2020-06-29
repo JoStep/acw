@@ -1,0 +1,27 @@
+.color-key {
+    display: none;
+    position: fixed;
+    width: 300px;
+    height: auto;
+}
+
+.yellow-peddles {
+    background-color: #ffce00;
+    line-height: 2em;
+}
+
+.green-leaves {
+    background-color: #82c45b;
+    line-height: 2em;
+}
+
+.salmonish-words {
+    background-color: #ee3e2c;
+    line-height: 2em;
+}
+
+    <div class="color-key">
+        <div class="yellow-peddles">#ffce00</div>
+        <div class="green-leaves">#82c45b</div>
+        <div class="salmonish-words">#ee3e2c</div>
+    </div>
